@@ -1,0 +1,71 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-icon-checkmark {
+    width: 13px;
+    height: 23px;
+    background-position: -5px -5px;
+}
+
+.sprite-icon-context {
+    width: 113px;
+    height: 90px;
+    background-position: -28px -5px;
+}
+
+.sprite-icon-five {
+    width: 85px;
+    height: 80px;
+    background-position: -151px -5px;
+}
+
+.sprite-icon-html {
+    width: 115px;
+    height: 101px;
+    background-position: -151px -95px;
+}
+
+.sprite-icon-like {
+    width: 76px;
+    height: 81px;
+    background-position: -5px -206px;
+}
+
+.sprite-icon-man {
+    width: 62px;
+    height: 80px;
+    background-position: -91px -206px;
+}
+
+.sprite-icon-menu-arrow-down {
+    width: 10px;
+    height: 5px;
+    background-position: -246px -5px;
+}
+
+.sprite-icon-people {
+    width: 73px;
+    height: 81px;
+    background-position: -163px -206px;
+}
+
+.sprite-icon-rent {
+    width: 115px;
+    height: 101px;
+    background-position: -276px -5px;
+}
+
+.sprite-icon-seo {
+    width: 81px;
+    height: 101px;
+    background-position: -276px -116px;
+}
+
+.sprite-icon-service {
+    width: 99px;
+    height: 99px;
+    background-position: -246px -227px;
+}
