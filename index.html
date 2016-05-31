@@ -30,7 +30,7 @@
               <div class="header__nav">
                 <ul>
                   <li><a class="current-link" href="#">ГЛАВНАЯ</a></li>
-                  <li>
+                  <li class="a">
                   <div class="tabs">
                     <div class="content">
                       <ul>
@@ -42,7 +42,7 @@
                     <a href="#">Услуги</a>
                     </div>
                   </li>
-                  <li>
+                  <li class="b">
                     <div class="tabs">
                     <div class="content">
                       <ul>
@@ -54,9 +54,10 @@
                     <a href="#">Цены</a>
                     </div>
                   </li>
-                  <li><a class="special-color-link" href="#">АКЦИИ</a></li>
-                  <li><a href="#">О НАС</a></li>
-                  <li><a href="#">КОНТАКТЫ</a></li>
+                  <li class="c"><a class="special-color-link" href="#">АКЦИИ</a></li>
+                  <li class="d"><a href="#">О НАС</a></li>
+                  <li class="e"><a href="#">КОНТАКТЫ</a></li>
+                  <li class="border"></li>
                 </ul>
               </div>
               <div class="mobile__nav">
@@ -162,7 +163,7 @@
                       </div>
                     </div>
                     <div class="carousel-btn-skin">
-                      <input type="submit" value="Подробности акции">
+                      <a href="http://seosky.su/akczii.html">Подробности акции</a>
                     </div>
                   </div>
               </div>
@@ -198,17 +199,17 @@
                           <span class="label">Создание сайтов</span>
                           </label>
                           <label>
-                          <input id="landing" class="checkbox" type="checkbox">
+                          <input id="landing" class="checkbox choose-site" type="checkbox">
                           <span class="checkbox-custom"></span>
                           <span class="label">сайт-визитка</span>
                           </label>
                           <label>
-                          <input id="shop" class="checkbox" type="checkbox">
+                          <input id="shop" class="checkbox choose-site" type="checkbox">
                           <span class="checkbox-custom"></span>
                           <span class="label">интернет-магазин</span>
                           </label>
                           <label>
-                          <input id="company-site" class="checkbox" type="checkbox">
+                          <input id="company-site" class="checkbox choose-site" type="checkbox">
                           <span class="checkbox-custom"></span>
                           <span class="label">корпоративный сайт</span>
                           </label>
@@ -222,17 +223,17 @@
                           <span class="label">Продвижение сайта</span>
                           </label>
                           <label>
-                          <input id="request" class="checkbox" type="checkbox">
+                          <input id="request" class="checkbox choose-seo" type="checkbox">
                           <span class="checkbox-custom"></span>
                           <span class="label">по запросам</span>
                           </label>
                           <label>
-                          <input id="traffic" class="checkbox" type="checkbox">
+                          <input id="traffic" class="checkbox choose-seo" type="checkbox">
                           <span class="checkbox-custom"></span>
                           <span class="label">по трафику</span>
                           </label>
                           <label>
-                          <input id="universal" class="checkbox" type="checkbox">
+                          <input id="universal" class="checkbox choose-seo" type="checkbox">
                           <span class="checkbox-custom"></span>
                           <span class="label">конкретные работы</span>
                           </label>
@@ -263,8 +264,8 @@
                         <div class="checkbox-skin">
                             <label>
                             <input id="full-work" class="checkbox" type="checkbox">
-                            <span class="checkbox-custom"></span>
-                            <span class="label">Комплексный интернет-маркетинг</span>
+                            <span class="checkbox-custom special-custom"></span>
+                            <span class="label special-label">Комплексный интернет-маркетинг</span>
                             </label>
                             </div>
                         </div>
@@ -405,11 +406,11 @@
             <p class="footer__title">КАРТА САЙТА</p>
               <ul>
                 <li><a href="#">Главная</a></li>
-                <li><a href="#">Услуги</a></li>
+                <li><a href="context.html">Услуги</a></li>
                 <li><a href="#">Цены</a></li>
                 <li><a href="#">Акции</a></li>
                 <li><a href="#">О нас</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="http://seosky.su/kontaktyi.html">Контакты</a></li>
               </ul>
             </div>
           </div>
@@ -417,8 +418,8 @@
             <div class="footer__services">
               <p class="footer__title">УСЛУГИ</p>
               <ul>
-                <li><a href="#">Контекстная реклама</a></li>
-                <li><a href="#">SEO-продвижение</a></li>
+                <li><a href="context.html">Контекстная реклама</a></li>
+                <li><a href="seo.html">SEO-продвижение</a></li>
                 <li><a href="#">Разработка сайтов</a></li>
                 <li><a href="#">Обслуживание сайтов</a></li>
                 <li><a href="#">Аренда сайтов</a></li>
@@ -432,7 +433,7 @@
               <p>Комендантский проспект, 4а</p>
               <p>офис 409</p>
               <p><span>тел.:</span> 8 (812) 903-06-99</p>
-              <span>e-mail:</span><a href="mailto:info@seosky.su"> info@seosky.su</a>
+              <span>e-mail:</span><a href="mailto:info@seosky.su">info@seosky.su</a>
             </div>
           </div>
         </div>
@@ -442,5 +443,38 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        var checkbox1 = $('#full-work');
+        var checkbox2 = $('.checkbox').filter(":not('#full-work')");
+        var label = $('.label').filter(":not('.special-label')");
+        var checkboxColor = $('.checkbox-custom').filter(":not('.special-custom')");
+        var chooseSite = $('#landing');
+        var site = $('#site');
+        var chooseSeo = $('.choose-seo');
+        var seo = $('#seo');
+        checkbox1.click(function(){
+          console.log("click1");
+          if (checkbox1.is(':checked')) {
+                checkbox2.attr("disabled", true);
+                checkbox2.removeAttr("checked");
+                label.attr("style", "color: #666");
+                checkboxColor.attr("style", "background-color: #e6e6e6");
+            }
+            else {
+              checkbox2.attr("disabled", false);
+              checkbox2.removeAttr("checked");
+              label.attr("style", "color: #333");
+              checkboxColor.attr("style", "background-color: transparent");
+            }
+        })
+        chooseSite.click(function(){
+          if (chooseSite.is(':checked')) {
+                site.attr("checked", true);
+            }
+            else {
+              site.removeAttr("checked");
+            }
+        })
+    </script>
   </body>
 </html>

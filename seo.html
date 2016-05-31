@@ -20,6 +20,7 @@
   </head>
   <body>
     <div class="wrapper">
+    <div id="menu" class="fixed-menu">
       <header>
         <div class="container">
           <div class="row">
@@ -136,8 +137,8 @@
               <div class="row">
                 <div class="col-md-12">
                   <ul>
-                    <li><a href="#">Контекстная  реклама</a></li>
-                    <li><a href="#">SEO-продвижение</a></li>
+                    <li><a href="context.html">Контекстная реклама</a></li>
+                    <li><a class="inner-nav__current-link" href="seo.html">SEO-продвижение</a></li>
                     <li><a href="#">Комплексное продвижение</a></li>
                     <li><a href="#">Разработка сайтов</a></li>
                     <li><a href="#">Обслуживание сайтов</a></li>
@@ -147,6 +148,7 @@
                 </div>
               </div>
             </div>
+          </div>
           </div>
       <main class="main special-bgc">
         <div class="container">
@@ -260,11 +262,11 @@
                    <p>Мы поможем не только привлечь целевую аудиторию на сайт, но и создать все условия для плодотворных отношений с клиентами.</p>
                    <p>Вы можете заказать полный комплекс работ или его часть:</p>
                    <ul>
-                     <li>создание нового сайта (при необходимости)</li>
-                     <li>аудит</li>
-                     <li>контекстная реклама</li>
-                     <li>аналитика</li>
-                     <li>SEO-продвижение</li>
+                     <li class="zalupa"><a href="#">создание нового сайта (при необходимости)</a></li>
+                     <li><a href="#">аудит</a></li>
+                     <li><a href="context.html">контекстная реклама</a></li>
+                     <li><a href="#">аналитика</a></li>
+                     <li><a href="seo.html">SEO-продвижение</a></li>
                    </ul>
                    <div class="complex-promotion__text-btn-skin">
                      <input type="submit" value="Подробнее об услуге">
@@ -305,11 +307,11 @@
             <p class="footer__title">КАРТА САЙТА</p>
               <ul>
                 <li><a href="#">Главная</a></li>
-                <li><a href="#">Услуги</a></li>
+                <li><a href="context.html">Услуги</a></li>
                 <li><a href="#">Цены</a></li>
                 <li><a href="#">Акции</a></li>
                 <li><a href="#">О нас</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="http://seosky.su/kontaktyi.html">Контакты</a></li>
               </ul>
             </div>
           </div>
@@ -317,8 +319,8 @@
             <div class="footer__services">
               <p class="footer__title">УСЛУГИ</p>
               <ul>
-                <li><a href="#">Контекстная реклама</a></li>
-                <li><a href="#">SEO-продвижение</a></li>
+                <li><a href="context.html">Контекстная реклама</a></li>
+                <li><a href="seo.html">SEO-продвижение</a></li>
                 <li><a href="#">Разработка сайтов</a></li>
                 <li><a href="#">Обслуживание сайтов</a></li>
                 <li><a href="#">Аренда сайтов</a></li>
@@ -342,5 +344,51 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(function(){ //функция обертка
+            var $menu = $("#menu"); //в переменную определим наше меню
+
+            $(window).scroll(function(){ //событие скролл
+                if ($(this).scrollTop() > 120 && $menu.hasClass("fixed-menu") ){ //(1)
+                    $menu.fadeOut('fast',function(){
+                        $(this).removeClass("fixed-menu")
+                               .addClass("fixed")
+                               .fadeIn('fast');
+                    });
+                } else if($(this).scrollTop() <= 120 && $menu.hasClass("fixed")){ //(2)
+                    $menu.fadeOut('fast',function(){
+                        $(this).removeClass("fixed")
+                               .addClass("fixed-menu")
+                               .fadeIn('fast');
+                    });
+                }
+            });
+        });//jQuery
+          $('.complex-promotion__text li:first-child').hover(function(){
+            $('.puzzle-center').addClass('opacity');
+          }, function(){
+            $('.puzzle-center').removeClass('opacity');
+          })
+          $('.complex-promotion__text li:nth-child(2)').hover(function(){
+            $('.puzzle-left').addClass('opacity');
+          }, function(){
+            $('.puzzle-left').removeClass('opacity');
+          })
+          $('.complex-promotion__text li:nth-child(3)').hover(function(){
+            $('.puzzle-top').addClass('opacity');
+          }, function(){
+            $('.puzzle-top').removeClass('opacity');
+          })
+          $('.complex-promotion__text li:nth-child(4)').hover(function(){
+            $('.puzzle-right').addClass('opacity');
+          }, function(){
+            $('.puzzle-right').removeClass('opacity');
+          })
+          $('.complex-promotion__text li:nth-child(5)').hover(function(){
+            $('.puzzle-bottom').addClass('opacity');
+          }, function(){
+            $('.puzzle-bottom').removeClass('opacity');
+          })
+    </script>
   </body>
 </html>
