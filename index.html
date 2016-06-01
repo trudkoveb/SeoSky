@@ -4,10 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Seosky</title>
-
-    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
@@ -20,11 +17,12 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
+    <div class="fixed-menu">
+      <header class="header">
         <div class="container">
           <div class="row">
             <div class="col-md-3">
-              <a href="index.html"><img class="img-responsive" src="img/pic/logo.png" alt="SeoSky"></a>
+              <a href="index.html"><img class="logo img-responsive" src="img/pic/logo.png" alt="SeoSky"></a>
             </div>
             <div class="col-md-7">
               <div class="header__nav">
@@ -125,13 +123,14 @@
           </div>
             <div class="col-md-2">
               <div class="header__contacts">
-                <p>8 (812) 903-06-99</p>
-                <input type="submit" value="ЗАКАЗАТЬ ЗВОНОК">
+                <p class="phoneNumber">8 (812) 903-06-99</p>
+                <input class="btn" type="submit" value="ЗАКАЗАТЬ ЗВОНОК">
               </div>
             </div>
           </div>
         </div>
       </header>
+      </div>
       <main class="main">
         <div class="container">
           <section class="slider">
@@ -475,6 +474,20 @@
               site.removeAttr("checked");
             }
         })
+      $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 200) {
+                $(".header").addClass("scrollheader");
+                $(".btn").addClass("nobtn");
+                $(".logo").addClass("smalllogo");
+                $(".phoneNumber").addClass("scrollPhoneNumber");
+            }
+            else {
+                 $(".header").removeClass("scrollheader");
+                 $(".btn").removeClass("nobtn");
+                 $(".logo").removeClass("smalllogo");
+               }
+        });
     </script>
   </body>
 </html>

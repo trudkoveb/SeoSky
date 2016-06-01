@@ -4,10 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Seosky Сео</title>
-
-    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
@@ -20,12 +17,12 @@
   </head>
   <body>
     <div class="wrapper">
-    <div id="menu" class="fixed-menu">
-      <header>
+    <div class="fixed-menu">
+      <header class="header">
         <div class="container">
           <div class="row">
             <div class="col-md-3">
-              <a href="index.html"><img class="img-responsive" src="img/pic/logo.png" alt="SeoSky"></a>
+              <a href="index.html"><img class="logo img-responsive" src="img/pic/logo.png" alt="SeoSky"></a>
             </div>
             <div class="col-md-7">
               <div class="header__nav">
@@ -68,7 +65,7 @@
                                   <span class="icon-bar"></span>
                                   <span class="icon-bar"></span>
                               </button>
-                              <a class="navbar-brand visible-xs" href="http://1zaicev.ru/">Меню</a>
+                              <a class="navbar-brand visible-xs" href="#">Меню</a>
                           </div>
                           <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px;">
                               <ul class="nav navbar-nav">
@@ -125,8 +122,8 @@
           </div>
             <div class="col-md-2">
               <div class="header__contacts">
-                <p>8 (812) 903-06-99</p>
-                <input type="submit" value="ЗАКАЗАТЬ ЗВОНОК">
+                <p class="phoneNumber">8 (812) 903-06-99</p>
+                <input class="btn" type="submit" value="ЗАКАЗАТЬ ЗВОНОК">
               </div>
             </div>
           </div>
@@ -154,7 +151,7 @@
         <div class="container">
           <section class="seo__info">
             <div class="row">
-              <div class="col-md-4 col-sm-6">
+              <div class="col-md-3 col-sm-6">
                 <div class="complex-seo-skin">
                   <p class="seo__info__title">Наши статьи:</p>
                     <div class="complex-seo">
@@ -171,12 +168,12 @@
                     </div>
                 </div>
               </div>
-              <div class="col-md-2 col-sm-6">
+              <div class="col-md-4 col-sm-6">
                 <div class="seo__img-skin">
                   <img src="img/pic/seo/img1.jpg" alt="Рисунок">
                 </div>
               </div>
-              <div class="col-md-6 col-sm-12">
+              <div class="col-md-5 col-sm-12">
                 <div class="seo-promotion-skin">
                   <p class="seo__info__title">SEO-продвижение</p>
                   <div class="seo-promotion">
@@ -345,25 +342,6 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
-        $(function(){ //функция обертка
-            var $menu = $("#menu"); //в переменную определим наше меню
-
-            $(window).scroll(function(){ //событие скролл
-                if ($(this).scrollTop() > 120 && $menu.hasClass("fixed-menu") ){ //(1)
-                    $menu.fadeOut('fast',function(){
-                        $(this).removeClass("fixed-menu")
-                               .addClass("fixed")
-                               .fadeIn('fast');
-                    });
-                } else if($(this).scrollTop() <= 120 && $menu.hasClass("fixed")){ //(2)
-                    $menu.fadeOut('fast',function(){
-                        $(this).removeClass("fixed")
-                               .addClass("fixed-menu")
-                               .fadeIn('fast');
-                    });
-                }
-            });
-        });//jQuery
           $('.complex-promotion__text li:first-child').hover(function(){
             $('.puzzle-center').addClass('opacity');
           }, function(){
@@ -389,6 +367,20 @@
           }, function(){
             $('.puzzle-bottom').removeClass('opacity');
           })
+          $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 200) {
+                $(".header").addClass("scrollheader");
+                $(".btn").addClass("nobtn");
+                $(".logo").addClass("smalllogo");
+                $(".phoneNumber").addClass("scrollPhoneNumber");
+            }
+            else {
+                 $(".header").removeClass("scrollheader");
+                 $(".btn").removeClass("nobtn");
+                 $(".logo").removeClass("smalllogo");
+               }
+        });
     </script>
   </body>
 </html>
