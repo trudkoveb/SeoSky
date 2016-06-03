@@ -1,0 +1,65 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-icon-free-site-contact {
+    width: 91px;
+    height: 100px;
+    background-position: -5px -5px;
+}
+
+.sprite-icon-free-site-economy {
+    width: 101px;
+    height: 100px;
+    background-position: -106px -5px;
+}
+
+.sprite-icon-free-site-freedom {
+    width: 83px;
+    height: 100px;
+    background-position: -5px -115px;
+}
+
+.sprite-icon-free-site-ourself {
+    width: 97px;
+    height: 100px;
+    background-position: -98px -115px;
+}
+
+.sprite-icon-free-site-profit {
+    width: 93px;
+    height: 100px;
+    background-position: -217px -5px;
+}
+
+.sprite-icon-rent-lock {
+    width: 19px;
+    height: 26px;
+    background-position: -320px -5px;
+}
+
+.sprite-icon-rent-select {
+    width: 12px;
+    height: 6px;
+    background-position: -320px -41px;
+}
+
+.sprite-list-type-blue {
+    width: 5px;
+    height: 5px;
+    background-position: -320px -57px;
+}
+
+.sprite-list-type-green {
+    width: 5px;
+    height: 4px;
+    background-position: -335px -57px;
+}
+
+.sprite-list-type-yellow {
+    width: 4px;
+    height: 5px;
+    background-position: -335px -71px;
+}

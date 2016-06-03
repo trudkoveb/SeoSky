@@ -91,7 +91,6 @@ hr {
   top: 0px;
   left: 50px;
   transition: 1s linear;
-  z-index: 1001;
 }
 
 .a:hover + .b + .c + .d + .e + .border{
@@ -199,8 +198,9 @@ header{
   display: none;
   padding-top: 20px;
   position: absolute;
-  margin-top: 10px;
+  margin-top: 20px;
   z-index: 100;
+  left: -15px;
 }
 .tabs:hover .content {
   display: block;
@@ -1345,7 +1345,7 @@ footer ul{
 }
 
 .context__img-skin img{
-    width: 94%;
+    width: 86%;
 }
 
 .context__img-skin{
@@ -1460,7 +1460,8 @@ footer ul{
     display: block;
     width: 5px;
     height: 4px;
-    background-image: url(../img/list-type-green.png);
+    background-position: -335px -57px;
+    background-image: url(../img/spritesheet3.png);
     position: absolute;
     top: 8px;
     left: -10px;
@@ -1470,8 +1471,9 @@ footer ul{
     content: "";
     display: block;
     width: 5px;
-    height: 4px;
-    background-image: url(../img/list-type-blue.png);
+    height: 5px;
+    background-position: -320px -57px;
+    background-image: url(../img/spritesheet3.png);
     position: absolute;
     top: 8px;
     left: -10px;
@@ -1480,9 +1482,10 @@ footer ul{
 .context__rate-c li:after{
     content: "";
     display: block;
-    width: 5px;
-    height: 4px;
-    background-image: url(../img/list-type-yellow.png);
+    width: 4px;
+    height: 5px;
+    background-position: -335px -71px;
+    background-image: url(../img/spritesheet3.png);
     position: absolute;
     top: 8px;
     left: -10px;
@@ -2254,6 +2257,10 @@ footer ul{
 
     .context__bonus{
         margin-bottom: 50px;
+    }
+
+    .seo__img-skin img{
+        width: 85%;
     }
 }
 
@@ -3103,7 +3110,8 @@ textarea{
     display: block;
     width: 19px;
     height: 26px;
-    background-image: url(../img/icon-rent-lock.png);
+    background-position: -320px -5px;
+    background-image: url(../img/spritesheet3.png);
     position: absolute;
     top: 1px;
     left: -30px;
@@ -3126,7 +3134,8 @@ textarea{
     display: block;
     width: 19px;
     height: 26px;
-    background-image: url(../img/icon-rent-lock.png);
+    background-position: -320px -5px;
+    background-image: url(../img/spritesheet3.png);
     position: absolute;
     top: -4px;
     left: -30px;
@@ -3134,6 +3143,7 @@ textarea{
 
 .rent__feeadback{
     padding: 50px 70px;
+    padding-bottom: 20px;
 }
 
 .rent__feeadback h2 + p{
@@ -3335,6 +3345,18 @@ textarea{
     .rent__portfolio-example-content{
         height: 510px;
     }
+
+    .seo-promotion-skin > .seo__info__title{
+        margin-top: 40px;
+    }
+
+    .rent__img-skin img{
+        width: 77%;
+    }
+
+    .rent-promotion-skin > .rent__info__title{
+        margin-top: 40px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px){
@@ -3412,4 +3434,424 @@ textarea{
 .scrollPhoneNumber{
     margin-bottom: 0;
     margin-top: 8px;
+}
+
+
+/* */
+
+
+.free-site__info{
+    padding-top: 50px;
+}
+
+.free-site__info__title{
+    font-family: GOTHAPROBOL;
+    font-size: 26px;
+    color: #00a7d6;
+    padding-left: 30px;
+    margin-bottom: 50px;
+}
+
+.free-site__img-skin img{
+    width: 94%;
+}
+
+.free-site__img-skin{
+    margin-top: 85px;
+}
+
+.free-site-promotion .free-site-promotion-subtitle{
+    font-family: GOTHAPROBOL;
+    font-size: 18px;
+    color: #00a7d6;
+    margin-bottom: 16px;
+}
+
+.free-site-promotion p{
+    color: #333;
+    font-size: 16px;
+    font-family: GOTHAPROLIG;
+}
+
+.free-site-promotion span{
+    color: #00a7d6;
+}
+
+.free-site__rates{
+    padding-top: 35px;
+    padding-bottom: 30px;
+}
+
+.free-site__rates-img-skin-text{
+    color: #00a7d6;
+    background-color: #fff;
+    border: 1px solid  #00a7d6;
+    border-radius: 30px;
+    padding: 20px;
+    width: 240px;
+    text-align: left;
+    z-index: 120;
+    position: relative;
+}
+
+.free-site__advantages{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.free-site__advantages ol{
+    /*text-align: center;*/
+    margin-left: 10%;
+    list-style-position: inside ;
+    margin-bottom: 30px;
+}
+
+.free-site__advantages ol > li{
+    font-family: GOTHAPROREG;
+    font-size: 26px;
+    color: #333;
+}
+
+.free-site__advantages ol > li > a{
+    color: #00a7d6;
+}
+
+.advertising-free-site{
+    border: 1px solid  #00a7d6;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+}
+
+.advertising-free-site > p{
+    padding-left: 90px;
+    margin-bottom: 36px;
+}
+
+.advertising-free-site .complex-seo__main-link{
+    font-family: GOTHAPROBOL;
+    color: #333;
+}
+
+.advertising-free-site a{
+    color: #333;
+    font-family: GOTHAPROLIG;
+    font-size: 18px;
+}
+
+.advertising-free-site p:hover a{
+    color: #00a7d6;
+    text-decoration: none;
+}
+
+.advertising-free-site > p:first-child, .advertising-free-site > p:nth-child(2), .advertising-free-site > p:nth-child(3), .advertising-free-site > p:nth-child(4){
+    position: relative;
+}
+
+.advertising-free-site > p:first-child:after, .advertising-free-site > p:nth-child(2):after, .advertising-free-site > p:nth-child(3):after, .advertising-free-site > p:nth-child(4):after{
+    content: "";
+    display: block;
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    background-image: url(../img/spritesheet2.png);
+
+}
+
+.advertising-free-site > p:first-child:after{
+    background-position: -245px -117px;
+    top: 5px;
+    left: 40px;
+}
+
+.advertising-free-site > p:nth-child(2):after{
+    background-position: -308px -5px;
+    top: 7px;
+    left: 40px;
+}
+
+.advertising-free-site > p:nth-child(3):after{
+    background-position: -5px -5px;
+    top: 5px;
+    left: 40px;
+}
+
+.advertising-free-site > p:nth-child(4):after{
+    background-position: -308px -80px;
+    top: 5px;
+    left: 40px;
+}
+
+.advantages-examples{
+    display: inline-block;
+    width: 19%;
+    margin-right: 7px;
+    height: 200px;
+    text-align: center;
+    position: relative;
+}
+
+.advantages-examples p:first-child{
+    font-family: GOTHAPROBOL;
+    font-size: 18px;
+}
+
+.advantages-example-a p:first-child{
+    color: #485654;
+}
+
+.advantages-example-b p:first-child{
+    color: #ff9f00;
+}
+
+.advantages-example-c p:first-child{
+    color: #7bcf00;
+}
+
+.advantages-example-d p:first-child{
+    color: #373a74;
+}
+
+.advantages-example-e p:first-child{
+    color: #e3516e;
+}
+
+.advantages-example-e{
+    margin-right: 0;
+}
+
+.advantages-examples p:last-child{
+    font-family: GOTHAPROLIG;
+    font-size: 16px;
+    color: #333;
+}
+
+.advantages-examples__text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 130px;
+    right: 0;
+    margin: auto;
+    width: 90%;
+}
+
+
+.icon-free-site-contact, .icon-free-site-economy, .icon-free-site-ourself, .icon-free-site-freedom, .icon-free-site-profit{
+    position: relative;
+}
+
+
+.icon-free-site-contact:after, .icon-free-site-economy:after, .icon-free-site-ourself:after, .icon-free-site-freedom:after, .icon-free-site-profit:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -150px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url(../img/spritesheet3.png);
+
+}
+
+.icon-free-site-contact:after{
+    width: 91px;
+    height: 100px;
+    background-position: -5px -5px;
+}
+
+.icon-free-site-economy:after{
+    width: 101px;
+    height: 100px;
+    background-position: -106px -5px;
+    top: -180px;
+}
+
+.icon-free-site-ourself:after{
+    width: 97px;
+    height: 100px;
+    background-position: -98px -115px;
+}
+
+.icon-free-site-freedom:after{
+    width: 83px;
+    height: 100px;
+    background-position: -5px -115px;
+
+}
+
+.icon-free-site-profit:after{
+    width: 93px;
+    height: 100px;
+    background-position: -217px -5px;
+    top: -180px;
+}
+
+.free-site__feeadback{
+    padding: 50px 70px;
+    padding-bottom: 20px;
+}
+
+.free-site__feeadback h2 + p{
+    font-family: GOTHAPROREG;
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.free-site__feeadback form{
+    border: 1px solid  #00a7d6;
+    text-align: center;
+    padding: 40px;
+}
+
+.free-site__feeadback form input[type=text], .free-site__feeadback form select{
+    padding-left: 10px;
+    border: 1px solid  #00a7d6;
+    height: 35px;
+    width: 100%;
+}
+
+.free-site__feeadback form select {
+  -webkit-appearance: none;
+  background-image: url('../img/icon-rent-select.png');
+  background-position: 90%;
+  background-repeat: no-repeat;
+  /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none!important;
+  font-style: italic;
+}
+
+.free-site__feeadback form select::-ms-expand {
+  display: none;
+}
+
+.free-site__feeadback form input::-webkit-input-placeholder {font-family: GOTHAPROITA; color:#4d4d4d; font-size: 14px;}
+.free-site__feeadback form input::-moz-placeholder         {font-family: GOTHAPROITA; color:#4d4d4d; font-size: 14px;}  /* Firefox 19+ */
+.free-site__feeadback form input:-moz-placeholder         {font-family: GOTHAPROITA; color:#4d4d4d; font-size: 14px;}  /* Firefox 18- */
+.free-site__feeadback form input:-ms-input-placeholder     {font-family: GOTHAPROITA; color:#4d4d4d; font-size: 14px;}
+
+.free-site__feeadback-btn-skin{
+    width: 183px;
+    margin: 0 auto;
+    margin-top: 27px;
+}
+
+.free-site__feeadback-btn-skin input[type=submit]{
+    background-color: #00a7d6;
+    color: #fff;
+    font-family: GOTHAPROBOL;
+    font-size: 16px;
+    border: 1px solid transparent;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.free-site__feeadback-btn-skin input[type=submit]:hover{
+    border: 1px solid  #00a7d6;
+    color: #00a7d6;
+    background-color: transparent;
+}
+
+.free-site__text{
+    padding-top: 50px;
+}
+
+.free-site__text p {
+    text-indent: 35px;
+    font-family: GOTHAPROLIG;
+    font-size: 18px;
+    color: #000;
+}
+
+@media(max-width: 767px){
+    .free-site__img-skin{
+        margin-top: 20px;
+    }
+
+    .free-site__info__title{
+        margin-top: 20px;
+    }
+
+    .advantages-examples{
+        display: block;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .free-site__advantages{
+        padding-bottom: 30px;
+    }
+
+    .free-site__feeadback{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .free-site__feeadback form input[type=text], .free-site__feeadback form select{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .free-site__img-skin{
+        text-align: center;
+    }
+
+    .free-site__img-skin img{
+        width: 50%;
+        display: inline-block;
+    }
+
+    .free-site__advantages ol{
+        margin-left: 0;
+        padding-left: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .free-site__img-skin img{
+        width: 88%;
+    }
+
+    .free-site-promotion-skin >.free-site__info__title{
+        margin-top: 40px;
+    }
+
+    .free-site__advantages-examples{
+        text-align: center;
+    }
+
+    .advantages-examples{
+        width: 27%;
+        margin-right: 41px;
+    }
+
+    .icon-free-site-contact:after, .icon-free-site-economy:after, .icon-free-site-ourself:after, .icon-free-site-freedom:after, .icon-free-site-profit:after{
+        top: -170px;
+    }
+
+    .icon-free-site-profit:after, .icon-free-site-economy:after{
+        top: -190px;
+    }
+
+    .advantages-example-d{
+        margin-top: 70px;
+    }
+
+    .free-site__feeadback form input[type=text], .free-site__feeadback form select{
+        margin-bottom: 20px;
+    }
+
+    .free-site__advantages ol{
+        margin-left: 0;
+        padding-left: 0;
+    }
 }
