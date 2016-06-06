@@ -1004,11 +1004,40 @@ footer ul{
     padding-left: 30px;
     padding-right: 10px;
     margin-bottom: 0;
+    list-style: none;
 }
 
 .seo__rate-skin li{
     color: #333;
     padding-bottom: 25px;
+    position: relative;
+}
+
+.seo__rate-a li:after, .seo__rate-b li:after, .seo__rate-c li:after{
+    content: "";
+    display: block;
+    background-image: url(../img/spritesheet3.png);
+    position: absolute;
+    top: 8px;
+    left: -10px;
+}
+
+.seo__rate-a li:after{
+    width: 5px;
+    height: 4px;
+    background-position: -335px -57px;
+}
+
+.seo__rate-b li:after{
+    width: 5px;
+    height: 5px;
+    background-position: -320px -57px;
+}
+
+.seo__rate-c li:after{
+    width: 4px;
+    height: 5px;
+    background-position: -335px -71px;
 }
 
 .seo__rate-skin .seo__rate-a li:last-child, .seo__rate-skin .seo__rate-c li:last-child{
@@ -5120,5 +5149,74 @@ textarea{
 @media (min-width: 992px) and (max-width: 1199px){
     .article-page__feedback-form__btn-skin{
         width: 30%;
+    }
+}
+
+/* Main feedback form */
+
+.main-feedback-form{
+    text-align: center;
+    border: 1px solid  #00a7d6;
+    position: relative;
+    width: 550px;
+    margin: 50px auto;
+    background-color: #fff;
+}
+
+.main-feedback-form a{
+    background-image: url(../img/icon-main-feedback-close.png);
+    width: 30px;
+    height: 29px;
+    border-radius: 15px;
+    display: block;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.main-feedback-form h2{
+    margin: 36px 0;
+}
+
+.main-feedback-form p{
+    font-family: GOTHAPROLIG;
+    color: #808080;
+}
+
+.main-feedback-form input{
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 14px;
+    border: 1px solid  #00a7d6;
+    padding: 14px;
+}
+
+.main-feedback-form input::-webkit-input-placeholder {font-family: GOTHAPROITA; color:#4d4d4d;}
+.main-feedback-form input::-moz-placeholder         {font-family: GOTHAPROITA; color:#4d4d4d;}  /* Firefox 19+ */
+.main-feedback-form input:-moz-placeholder         {font-family: GOTHAPROITA; color:#4d4d4d;}  /* Firefox 18- */
+.main-feedback-form input:-ms-input-placeholder     {font-family: GOTHAPROITA; color:#4d4d4d;}
+
+.main-feedback-form input[type=submit]{
+    background-color: #00a7d6;
+    color: #fff;
+    border: 1px solid transparent;
+    font-family: GOTHAPROBOL;
+    font-size: 16px;
+}
+
+.main-feedback-form input[type=submit]:hover{
+    background-color: transparent;
+    color: #00a7d6;
+    border: 1px solid #00a7d6;
+}
+
+@media (max-width: 767px){
+    .main-feedback-form{
+        width: 90%;
+    }
+
+    .main-feedback-form input{
+        width: 90%;
     }
 }
