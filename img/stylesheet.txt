@@ -4,68 +4,326 @@
     display: block;
 }
 
-.sprite-icon-checkmark {
-    width: 13px;
-    height: 23px;
+.sprite-icon-adv {
+    width: 27px;
+    height: 27px;
     background-position: -5px -5px;
 }
 
-.sprite-icon-context {
+.sprite-icon-adv-settings {
+    width: 27px;
+    height: 27px;
+    background-position: -5px -42px;
+}
+
+.sprite-icon-blue-dot {
+    width: 5px;
+    height: 5px;
+    background-position: -5px -79px;
+}
+
+.sprite-icon-circle-yandex {
+    width: 27px;
+    height: 27px;
+    background-position: -5px -94px;
+}
+
+.sprite-icon-coins {
+    width: 27px;
+    height: 27px;
+    background-position: -5px -131px;
+}
+
+.sprite-icon-complex-page-analitycs {
+    width: 115px;
+    height: 100px;
+    background-position: -5px -168px;
+}
+
+.sprite-icon-complex-page-audit {
+    width: 115px;
+    height: 100px;
+    background-position: -5px -278px;
+}
+
+.sprite-icon-complex-page-context {
+    width: 115px;
+    height: 100px;
+    background-position: -5px -388px;
+}
+
+.sprite-icon-complex-page-creat {
+    width: 115px;
+    height: 100px;
+    background-position: -5px -498px;
+}
+
+.sprite-icon-complex-page-seo {
+    width: 115px;
+    height: 100px;
+    background-position: -5px -608px;
+}
+
+.sprite-icon-context-blue-arrow {
+    width: 118px;
+    height: 81px;
+    background-position: -5px -718px;
+}
+
+.sprite-icon-context-desktop {
+    width: 102px;
+    height: 80px;
+    background-position: -5px -809px;
+}
+
+.sprite-icon-context-gears {
+    width: 82px;
+    height: 80px;
+    background-position: -5px -899px;
+}
+
+.sprite-icon-context-orange-arrow {
+    width: 130px;
+    height: 81px;
+    background-position: -5px -989px;
+}
+
+.sprite-icon-free-site-basket {
+    width: 93px;
+    height: 100px;
+    background-position: -5px -1080px;
+}
+
+.sprite-icon-free-site-hand {
+    width: 101px;
+    height: 100px;
+    background-position: -5px -1190px;
+}
+
+.sprite-icon-free-site-man {
+    width: 83px;
+    height: 100px;
+    background-position: -5px -1300px;
+}
+
+.sprite-icon-free-site-paper {
+    width: 97px;
+    height: 100px;
+    background-position: -5px -1410px;
+}
+
+.sprite-icon-free-site-people {
+    width: 91px;
+    height: 100px;
+    background-position: -5px -1520px;
+}
+
+.sprite-icon-google {
+    width: 27px;
+    height: 27px;
+    background-position: -5px -1630px;
+}
+
+.sprite-icon-green-dot {
+    width: 5px;
+    height: 5px;
+    background-position: -5px -1667px;
+}
+
+.sprite-icon-green-mark {
+    width: 14px;
+    height: 24px;
+    background-position: -5px -1682px;
+}
+
+.sprite-icon-main-context {
     width: 113px;
     height: 90px;
-    background-position: -28px -5px;
+    background-position: -5px -1716px;
 }
 
-.sprite-icon-five {
-    width: 85px;
-    height: 80px;
-    background-position: -151px -5px;
-}
-
-.sprite-icon-html {
+.sprite-icon-main-create {
     width: 115px;
     height: 101px;
-    background-position: -151px -95px;
+    background-position: -5px -1816px;
 }
 
-.sprite-icon-like {
-    width: 76px;
-    height: 81px;
-    background-position: -5px -206px;
+.sprite-icon-main-feedback-close {
+    width: 30px;
+    height: 29px;
+    background-position: -5px -1927px;
 }
 
-.sprite-icon-man {
+.sprite-icon-main-man {
     width: 62px;
     height: 80px;
-    background-position: -91px -206px;
+    background-position: -5px -1966px;
 }
 
-.sprite-icon-menu-arrow-down {
-    width: 10px;
-    height: 5px;
-    background-position: -246px -5px;
+.sprite-icon-main-paper {
+    width: 76px;
+    height: 81px;
+    background-position: -5px -2056px;
 }
 
-.sprite-icon-people {
+.sprite-icon-main-people {
     width: 73px;
     height: 81px;
-    background-position: -163px -206px;
+    background-position: -5px -2147px;
 }
 
-.sprite-icon-rent {
+.sprite-icon-main-rent {
     width: 115px;
     height: 101px;
-    background-position: -276px -5px;
+    background-position: -5px -2238px;
+}
+
+.sprite-icon-main-seo {
+    width: 81px;
+    height: 101px;
+    background-position: -5px -2349px;
+}
+
+.sprite-icon-main-star {
+    width: 85px;
+    height: 80px;
+    background-position: -5px -2460px;
+}
+
+.sprite-icon-main-tools {
+    width: 99px;
+    height: 99px;
+    background-position: -5px -2550px;
+}
+
+.sprite-icon-nav-white-arrow {
+    width: 10px;
+    height: 5px;
+    background-position: -5px -2659px;
+}
+
+.sprite-icon-optimization {
+    width: 27px;
+    height: 27px;
+    background-position: -5px -2674px;
+}
+
+.sprite-icon-orange-dot {
+    width: 6px;
+    height: 5px;
+    background-position: -5px -2711px;
+}
+
+.sprite-icon-price-adv {
+    width: 20px;
+    height: 20px;
+    background-position: -5px -2726px;
+}
+
+.sprite-icon-price-design {
+    width: 22px;
+    height: 23px;
+    background-position: -5px -2756px;
+}
+
+.sprite-icon-price-loupe {
+    width: 21px;
+    height: 21px;
+    background-position: -5px -2789px;
+}
+
+.sprite-icon-price-yandex {
+    width: 20px;
+    height: 20px;
+    background-position: -5px -2820px;
+}
+
+.sprite-icon-puzzle-blue {
+    width: 36px;
+    height: 36px;
+    background-position: -5px -2850px;
+}
+
+.sprite-icon-puzzle-green {
+    width: 28px;
+    height: 26px;
+    background-position: -5px -2896px;
+}
+
+.sprite-icon-puzzle-orange {
+    width: 28px;
+    height: 26px;
+    background-position: -5px -2932px;
+}
+
+.sprite-icon-puzzle-red {
+    width: 24px;
+    height: 36px;
+    background-position: -5px -2968px;
+}
+
+.sprite-icon-puzzle-violet {
+    width: 24px;
+    height: 36px;
+    background-position: -5px -3014px;
+}
+
+.sprite-icon-rent-lock {
+    width: 19px;
+    height: 26px;
+    background-position: -5px -3060px;
+}
+
+.sprite-icon-rent-select {
+    width: 12px;
+    height: 6px;
+    background-position: -5px -3096px;
 }
 
 .sprite-icon-seo {
-    width: 81px;
-    height: 101px;
-    background-position: -276px -116px;
+    width: 27px;
+    height: 27px;
+    background-position: -5px -3112px;
 }
 
-.sprite-icon-service {
-    width: 99px;
-    height: 99px;
-    background-position: -246px -227px;
+.sprite-icon-site-design-analytics {
+    width: 115px;
+    height: 101px;
+    background-position: -5px -3149px;
+}
+
+.sprite-icon-site-design-components {
+    width: 115px;
+    height: 101px;
+    background-position: -5px -3260px;
+}
+
+.sprite-icon-site-design-design {
+    width: 115px;
+    height: 101px;
+    background-position: -5px -3371px;
+}
+
+.sprite-icon-site-design-interface {
+    width: 115px;
+    height: 101px;
+    background-position: -5px -3482px;
+}
+
+.sprite-icon-site-design-start {
+    width: 115px;
+    height: 101px;
+    background-position: -5px -3593px;
+}
+
+.sprite-icon-site-design-test {
+    width: 115px;
+    height: 101px;
+    background-position: -5px -3704px;
+}
+
+.sprite-icon-yandex {
+    width: 27px;
+    height: 27px;
+    background-position: -5px -3815px;
 }
